@@ -1,0 +1,35 @@
+@use 'cores';
+.Main{
+    width: 100%;
+    height: calc(100vh - 6.5rem);
+    background-color: #1F2937;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5vw;
+    justify-items: center;
+    &__Texto{
+        margin-top: 3rem;
+        width: 80%;
+        height: 80%;
+        h2{
+            font-size: 7vw;
+            color: cores.$primeira-cor;
+            font-family: "Poppins", sans-serif;
+            line-height: 8vw;
+        }
+        p{
+            margin-top: 2rem;
+            font-size: 1.25rem;
+            color: cores.$primeira-cor;
+            font-family: Roboto, sans-serif;
+        }
+    }
+    &__Image{
+        margin-right: 5vw;
+        width: 100%;
+        img{
+            width: inherit;
+        }
+    }
+}

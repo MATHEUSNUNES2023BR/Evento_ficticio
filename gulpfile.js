@@ -6,7 +6,7 @@ function buildStyles() {
     log('Compilando arquivos SCSS...');
     return gulp.src('./src/styles/*.scss')
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        .pipe(gulp.dest('./src/styles/css'))
+        .pipe(gulp.dest('./dist/css'))
         .on('end', () => log('Compilação completa! Arquivos gerados em dist/css'));
 }
 

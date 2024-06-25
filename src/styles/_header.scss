@@ -31,6 +31,10 @@
             li{
                 font-size: 1.5rem;
                 cursor: pointer;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    border-bottom: 2px solid white;
+                }
             }
         }
     }
@@ -48,4 +52,83 @@
             padding-left: 2rem;
         }
     }
+
+
+    @media(max-width: 600px){
+        height: 9rem;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        &__logo{
+            grid-row: 1;
+            align-self: flex-end;
+            &--icon{
+                width: 32px;
+            }
+            &--titulo{
+                font-size: 4vw;
+            }
+        }
+        &__nav{
+            grid-row: 2;
+            grid-column: 1 / -1;
+            padding-top: 4vw;
+            &__ul{
+
+                li{
+                        font-size: 4.4vw;
+                        text-align: center;
+                }
+            }
+        }
+        &__timer{
+            flex-direction: column;
+            justify-self: end;
+            padding-right: 2vw;
+            grid-row: 1;
+            &--logo{
+                width: 40px;
+                position: relative;
+            }
+            &--tempo{
+                padding-left: 0.5rem;
+                &--tag{
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+
+    @media(min-width: 601px) and (max-width: 992px){
+        height: 8rem;
+        padding: 10px;
+        grid-template-columns: 0.5fr 1.5fr 0.6fr;
+        &__logo{
+            &--titulo{
+                font-size: 2.5vw;
+            }
+        }
+        &__nav{
+            &__ul{
+               li{
+                    font-size: 2.5vw;
+                    text-align: center;
+            }
+            }
+        }
+        &__timer{
+        
+            flex-direction: column;
+            &--logo{
+                width: 48px;
+            }
+            &--tempo{
+                padding-left: 0.5rem;
+                &--tag{
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+
 }
