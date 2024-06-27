@@ -1,7 +1,7 @@
 @use 'cores';
 .Main{
-    width: 100vw;
-    height: 70vh;
+    width: 98vw;
+    height: 75vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 15vh;
@@ -21,7 +21,7 @@
             font-size: 1.2vw;
             line-height: 2vw;
             color: cores.$primeira-cor;
-            font-family: Roboto, sans-serif;
+            font-family: "Roboto", sans-serif;
         }
     }
     &__Image{

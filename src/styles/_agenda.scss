@@ -1,0 +1,78 @@
+@use 'cores';
+
+.agenda{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    &__titulo{
+        font-family: "Poppins", sans-serif;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2vw;
+        font-size: 3.2vw;
+    }
+    &__paragrafo{
+        font-family: "Roboto", sans-serif;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1vw;
+        text-align: center;
+        font-size: 1.4vw;
+    }
+    &__containers{
+        margin: 0 auto;
+        &__dias{
+            width: 30vw;
+            display: flex;
+            justify-content: center;
+            margin: 2vw;
+            &__texto{
+                display: flex;
+                flex-direction: column;
+                &--titulo{
+                    font-size: 1.3vw;
+                    padding-left: 2vw;
+                    font-family: "Poppins", sans-serif;
+                }
+                &--horario{
+                    font-family: "Roboto", sans-serif;
+                    padding-left: 1vw;
+                }
+            }
+        }
+        &__dias--2{
+            margin-left: 5vw;
+        }
+        &__dias--3{
+            margin-left: 4vw;
+        }
+        &__dias--4{
+            padding-left:5vw;
+        }
+    }
+    @media(max-width: 992px){
+        &__titulo{
+            margin-top: 25px;
+            font-size: 7.4vw;
+        }
+        &__paragrafo{
+            font-size: 4vw;
+            padding: 3vw 0;
+        }
+        &__containers{
+            &__dias{
+                width: 100vw;
+                margin: 4vw;
+                &__texto{
+                    &--titulo{
+                        font-size: 4.5vw;
+                    }
+                    &--horario{
+
+                    }
+                }
+            }
+        }
+    }
+}

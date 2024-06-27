@@ -1,6 +1,5 @@
 @use 'cores';
-
-.sobre{
+.tecnologias{
     display: flex;
     flex-direction: column;
     color: cores.$primeira-cor;
@@ -43,6 +42,7 @@
             border-radius: 10px;
             &--titulo{
                 font-size: 1.8vw;
+                text-align: center;
                 font-family: "Poppins", sans-serif;
 
             }
